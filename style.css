@@ -1,11 +1,15 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
   --black: hsl(240, 6%, 13%);
+  --black-2: hsl(240, 6%, 8%);
   --gray: hsl(240, 9%, 89%);
+  --gray-2: hsl(240, 6%, 13%);
+
 
 
   height: 100%;
@@ -25,9 +29,15 @@ main {
   height: 100vh;
 }
 
+#lineBreak,
+#backgroundRange {
+  display: none;
+}
+
 .container {
   max-width: 250px;
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   color: var(--gray);
@@ -86,4 +96,124 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+
+@media (min-width: 796px) {
+  
+  main * {
+    margin: 0;
+    padding: 0;
+    display: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    font-weight: initial;
+    background-color: initial;
+    filter: initial;
+    background: initial;
+    max-width: initial;
+
+  }
+
+  body {
+    overflow: overlay;
+  }
+
+  main {
+    background: url(./images/background-desktop.svg) no-repeat center/cover;
+    background-color: var(--black-2);
+  }
+
+  #backgroundRange {
+    display: flex;
+    margin-inline: 147px;
+
+    top: -8.75rem;
+
+    position: absolute;
+    z-index: 3;
+  }
+
+  #lineBreak {
+    display: flex;
+    position: absolute;
+
+    margin-inline: 139px;
+    top: 16px;
+
+    width: 80px;
+    height: 8px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    margin-inline: auto;
+    margin-top: 140px;
+
+    max-width: 358px;
+    max-height: 550px;
+    width: 358px;
+    height: 550px;
+    
+    background: url(./images/mask.svg) no-repeat center/cover;
+    background-color: var(--gray-2);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    margin-inline: auto;
+  }
+
+  .avatar {
+    margin-top: 0;
+    top: 76px;
+  }
+
+  #userName {
+    width: 203px;
+    height: 30px;
+    font-size: 1.5rem;
+
+    margin-top: 95px;
+
+    color: var(--gray);
+
+    margin-inline: auto;
+  }
+
+  #userLink {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+
+    height: 26px;
+
+    margin-inline: auto;
+    margin-bottom: 25px;
+  }
+
+  #userBio {
+    font-size: 14px;
+    line-height: 24px;
+
+    text-align: center;
+
+    padding-inline: 48px;
+    margin-bottom: 30px;
+  }
+
+  #socialLinks {
+    display: flex;
+    gap: 0.5rem;
+  
+    justify-content: center;
+}
+
 }
