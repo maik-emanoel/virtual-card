@@ -1,9 +1,9 @@
 const linksSocialMedia = {
   github: 'maik-emanoel',
-  youtube: 'UCVm1sKpU57J0cOj5--PeFAA',
-  facebook: 'maikemanoel',
+  // youtube: 'UCVm1sKpU57J0cOj5--PeFAA',
+  facebook: 'maik.emanoel.3',
   instagram: 'maik.emanoel',
-  twitter: 'jakelinytec'
+  twitter: ''
 }
 
 function changeSocialMediaLinks() {
