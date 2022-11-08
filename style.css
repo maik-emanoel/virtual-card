@@ -118,6 +118,10 @@ ul {
 
   }
 
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   main {
     background: url(./images/background-desktop.svg) no-repeat center/cover;
     background-color: var(--black-2);
