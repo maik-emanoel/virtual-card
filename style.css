@@ -24,6 +24,23 @@ body {
   overflow-x: hidden;
 }
 
+/* ============ scrollbar ================= */
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+  background: #121214;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #29292E;
+  border-radius: 6px;
+}
+
+/* ====================================== */
+
 main {
   background: url(./images/background.svg) no-repeat center/cover;
   width: 100vw;
