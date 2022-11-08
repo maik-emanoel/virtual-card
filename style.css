@@ -20,6 +20,8 @@ body {
 body {
   display: grid;
   place-items: center;
+
+  overflow-x: hidden;
 }
 
 main {
@@ -114,10 +116,6 @@ ul {
     background: initial;
     max-width: initial;
 
-  }
-
-  body {
-    overflow: overlay;
   }
 
   main {
