@@ -3,7 +3,7 @@ const linksSocialMedia = {
   // youtube: 'UCVm1sKpU57J0cOj5--PeFAA',
   facebook: 'maik.emanoel.3',
   instagram: 'maik.emanoel',
-  twitter: ''
+  twitter: 'maik_emanoel'
 }
 
 function changeSocialMediaLinks() {
@@ -15,12 +15,6 @@ function changeSocialMediaLinks() {
   }
 }
 
-// i = i + 1
-// i++
-
-
-// ser humano 123456789
-// computador 0123456789
 
 changeSocialMediaLinks()
 
@@ -40,16 +34,3 @@ function getGitHubProfileInfos() {
 
 getGitHubProfileInfos()
 
-
-
-
-
-
-// ARROW FUNCTIONS
-function nomedafuncao(argurmentos){
-  //code
-}
-
-argumento => {
-
-}
